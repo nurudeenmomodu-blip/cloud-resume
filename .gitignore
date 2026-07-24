@@ -1,0 +1,10 @@
+# Ignore the Terraform executable tool
+terraform.exe
+
+# Ignore local hidden provider downloads
+.terraform/
+
+# Ignore local secret tracking databases
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl

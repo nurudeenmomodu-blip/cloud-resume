@@ -2,44 +2,283 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nurudeen Momodu | Cloud Portfolio</title>
+    <style>
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            line-height: 1.7;
+            color: #1e293b;
+            background: #f8fafc;
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            text-align: center;
+            padding-bottom: 25px;
+            border-bottom: 3px solid #2563eb;
+            margin-bottom: 25px;
+        }
+
+        .header h1 {
+            font-size: 2.4em;
+            color: #0f172a;
+            margin-bottom: 5px;
+        }
+
+        .header .title {
+            font-size: 1.2em;
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        .header .contact {
+            color: #64748b;
+            font-size: 0.95em;
+            margin-top: 8px;
+        }
+
+        .header .contact a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .header .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .header .counter-box {
+            margin-top: 12px;
+            font-size: 0.95em;
+            color: #475569;
+        }
+
+        .header .counter-box span {
+            font-weight: 700;
+            color: #2563eb;
+            font-size: 1.2em;
+        }
+
+        /* ===== HEADINGS ===== */
+        h2 {
+            font-size: 1.5em;
+            color: #0f172a;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+            margin-top: 35px;
+            margin-bottom: 18px;
+        }
+
+        h3 {
+            font-size: 1.15em;
+            color: #0f172a;
+            margin-top: 22px;
+            margin-bottom: 4px;
+        }
+
+        .job-company {
+            color: #2563eb;
+        }
+
+        .job-date {
+            color: #94a3b8;
+            font-size: 0.9em;
+            font-weight: 400;
+        }
+
+        .job-sub {
+            font-style: italic;
+            color: #64748b;
+            margin-bottom: 8px;
+        }
+
+        /* ===== LISTS ===== */
+        ul {
+            padding-left: 25px;
+            margin-top: 6px;
+            margin-bottom: 18px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            padding-left: 4px;
+        }
+
+        /* ===== PROJECT BOX ===== */
+        .project-box {
+            background: #ffffff;
+            padding: 18px 22px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+            margin-top: 6px;
+        }
+
+        .project-box h3 {
+            margin-top: 0;
+        }
+
+        /* ===== CERT BADGE ===== */
+        .cert-badge {
+            display: inline-block;
+            background: #1e293b;
+            color: #ffffff;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            margin-top: 6px;
+        }
+
+        /* ===== DIVIDER ===== */
+        hr {
+            border: none;
+            border-top: 2px solid #e2e8f0;
+            margin: 30px 0 20px 0;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.8em;
+            margin-top: 35px;
+            padding-top: 15px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 600px) {
+            body {
+                margin: 15px;
+                padding: 18px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .header .title {
+                font-size: 1em;
+            }
+
+            h2 {
+                font-size: 1.25em;
+            }
+
+            .project-box {
+                padding: 14px 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Nurudeen Momodu</h1>
-    <p>Total Profile Views: <span id="counter">Loading...</span></p>
-    <h3>Cloud & Pipeline Engineer</h3>
-    <p>Email: mn.momodu@gmail.com | Location: Ontario, Canada</p>
-    <p><strong>AWS Certified Cloud Practitioner</strong></p>
 
-    <hr>
+    <!-- ===== HEADER ===== -->
+    <div class="header">
+        <h1>Nurudeen Momodu</h1>
+        <div class="title">Cloud Support Engineer | AWS Certified | BCS Certified</div>
+        <div class="contact">
+            📧 mn.momodu@gmail.com &nbsp;|&nbsp; 📍 Ontario, Canada &nbsp;|&nbsp;
+            🔗 <a href="https://github.com/nurudeenmomodu-blip" target="_blank">github.com/nurudeenmomodu-blip</a>
+        </div>
+        <div class="cert-badge">☁️ AWS Certified Cloud Practitioner (2026)</div>
+        <div class="counter-box">
+            <p>Total Profile Views: <span id="counter">Loading...</span></p>
+        </div>
+    </div>
 
-    <h2>Technical Projects</h2>
-<h3>The Cloud Resume Challenge (AWS Serverless Architecture)</h3>
-<ul>
-    <li>Hosted a secure, static resume webpage globally using <strong>Amazon S3</strong> and <strong>AWS CloudFront</strong>.</li>
-    <li>Configured custom DNS routing and SSL security using <strong>Porkbun</strong> and <strong>AWS Certificate Manager (ACM)</strong>.</li>
-    <li>Engineered a serverless data tracking backend using <strong>AWS Lambda (Python 3.12)</strong>, <strong>AWS API Gateway</strong> (incorporating <code>OPTIONS</code> CORS security configurations), and an <strong>Amazon DynamoDB</strong> NoSQL table.</li>
-    <li>Established real-time performance logging and infrastructure alerting topologies utilizing <strong>AWS CloudWatch Logs</strong> and <strong>AWS SNS</strong>.</li>
-    <li>Provisioned and managed the entire application architecture using <strong>Terraform (Infrastructure as Code)</strong> for full state automation.</li>
-</ul>
+    <!-- ===== PROFESSIONAL SUMMARY ===== -->
+    <h2>Professional Summary</h2>
+    <p>
+        A results-oriented Cloud Support Engineer with 3 years of experience in troubleshooting, monitoring, and maintaining cloud infrastructure. Holds an AWS Cloud Practitioner certification and the BCS Level 4 Certificate in IT, with hands-on experience in Linux, Docker, and Python scripting through professional support roles and the Cloud Resume Challenge. Applies methodical debugging to resolve complex technical issues, communicates clearly with cross-functional teams, and automates routine tasks. Eager to transition into a Cloud Engineer role, bringing a strong support foundation and a passion for building scalable, production-ready infrastructure.
+    </p>
 
-    <h2>Professional Background</h2>
-    <h3>Technical Animator</h3>
+    <!-- ===== CERTIFICATIONS ===== -->
+    <h2>Certifications</h2>
     <ul>
-        <li>Managed complex visual assets, pipeline optimizations, and digital environments.</li>
+        <li><strong>AWS Certified Cloud Practitioner</strong> – Amazon Web Services, 2026</li>
+        <li><strong>BCS Level 4 Certificate in IT</strong> – BCS, The Chartered Institute for IT</li>
     </ul>
+
+    <!-- ===== TECHNICAL PROJECTS ===== -->
+    <h2>Technical Projects</h2>
+    <div class="project-box">
+        <h3>The Cloud Resume Challenge (AWS Serverless Architecture)</h3>
+        <ul>
+            <li>Hosted a secure, static resume webpage globally using <strong>Amazon S3</strong> and <strong>AWS CloudFront</strong> with HTTPS via AWS Certificate Manager.</li>
+            <li>Engineered a serverless data tracking backend using <strong>AWS Lambda (Python 3.12)</strong>, <strong>AWS API Gateway</strong>, and <strong>Amazon DynamoDB</strong>.</li>
+            <li>Established real-time performance logging and infrastructure alerting using <strong>AWS CloudWatch</strong> and <strong>AWS SNS</strong>.</li>
+            <li>Provisioned and managed the entire application architecture using <strong>Terraform</strong> (Infrastructure as Code) for full state automation.</li>
+            <li>Implemented CI/CD pipelines with <strong>GitHub Actions</strong> to automate frontend and backend deployments.</li>
+        </ul>
+    </div>
+
+    <!-- ===== PROFESSIONAL EXPERIENCE ===== -->
+    <h2>Professional Experience</h2>
+
+    <h3>
+        Cloud Support Engineer
+        <span class="job-company">| Hensley Baker Inc</span>
+        <span class="job-date">| July 2023 – Present</span>
+    </h3>
+    <ul>
+        <li>Resolved an average of 45 support tickets per week with a 97% customer satisfaction rating, consistently exceeding team targets by 15%.</li>
+        <li>Reduced average ticket resolution time by 30% through automation scripts (Python/Bash) and improved troubleshooting documentation.</li>
+        <li>Automated 6 routine support tasks, saving the team 12 hours per week (20% reduction in manual effort).</li>
+        <li>Led incident response for 15 production outages, restoring service within 25 minutes on average, below the SLA target of 45 minutes.</li>
+        <li>Proactively identified and mitigated 20+ potential infrastructure issues through monitoring, preventing an estimated 40+ hours of downtime annually.</li>
+        <li>Created and maintained 25 runbooks and knowledge base articles, reducing team onboarding time by 40%.</li>
+    </ul>
+
+    <h3>
+        Technical Artist
+        <span class="job-company">| Lotusfly Animation</span>
+        <span class="job-date">| January 2018 – June 2023</span>
+    </h3>
+    <ul>
+        <li>Developed and maintained Python scripts to automate animation pipelines and rendering workflows, reducing manual processing time by 30% and improving team efficiency.</li>
+        <li>Troubleshot and resolved technical issues in production environments, applying methodical debugging to identify root causes and implement fixes under tight deadlines.</li>
+        <li>Collaborated with cross-functional teams (artists, developers, project managers) via Slack and project management tools, translating technical concepts to non-technical stakeholders and ensuring smooth project delivery.</li>
+        <li>Managed version control using Git for project assets and scripts, maintaining organized repositories and ensuring team members could access the latest versions.</li>
+        <li>Documented technical workflows and created user guides for internal tools, enabling faster onboarding for new team members and reducing recurring support requests.</li>
+    </ul>
+
+    <!-- ===== EDUCATION ===== -->
+    <h2>Education</h2>
+    <ul>
+        <li><strong>BCS Level 4 Certificate in IT</strong> – BCS, The Chartered Institute for IT</li>
+        <li><strong>Bachelor of Science in Microbiology</strong> – Madonna University, Nigeria</li>
+    </ul>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="footer">
+        &copy; 2026 Nurudeen Momodu &bull; Built with ☁️ on AWS
+    </div>
+
+    <!-- ===== VISITOR COUNTER (DO NOT REMOVE OR MODIFY) ===== -->
     <script>
-    // Fetch the live visitor counter from the AWS API Gateway
-    fetch('https://1hgi5o9bid.execute-api.us-east-2.amazonaws.com/get-count')
-        .then(response => response.json())
-        .then(data => {
-            // Dynamically inject the new count into the HTML page
-            document.getElementById('counter').innerText = data.count;
-        })
-        .catch(error => {
-            console.error('Error fetching counter:', error);
-            document.getElementById('counter').innerText = 'Error loading count';
-        });
-</script>
+        fetch('https://high50bld.execute-api.us-east-2.amazonaws.com/get-count')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('counter').innerText = data.count;
+            })
+            .catch(error => {
+                console.error('Error fetching counter:', error);
+                document.getElementById('counter').innerText = 'Error loading count';
+            });
+    </script>
+
 </body>
 </html>
